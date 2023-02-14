@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="css/login.css">    
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth-compat.js"></script>
+    <script src="js/login.js" type="module" defer></script>
+</head>
+
+<body>
+    <div class="login">
+        <div class="inner-login">
+            <h6 class="close-login"><a href="index.html">X</a></h6>
+                <h1>Login</h1>
+            <form action="" class="form">
+                <div class="txt_field">
+                    <input type="text" id="email" required>
+                    <span></span>
+                    <label for="">Email</label>
+                </div>
+                <div class="txt_field">
+                    <input type="password" id="password" required>
+                    <span></span>
+                    <label for="">Password</label>
+                </div>
+                <div class="pass">Forgot Password?</div>
+                <input type="submit" value="Login" class="submit-login-btn">
+                <div class="error hidden"></div>
+                <div class="signup_link">
+                    Not a member? <a href="register-page.html">Sign up</a>
+                </div>
+            </form>
+        </div>
+    </div>
+
+</body>
+</html>

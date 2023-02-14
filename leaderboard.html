@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Leaderboard</title>
+    <link rel="stylesheet" href="css/leaderboard.css">
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth-compat.js"></script>
+    <script src="js/leaderboard.js" type="module" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li><a href="game.html">Play Game</a></li>
+                <li class="leaderboard-btn">Leaderboard</li>
+                <!-- swap login with logout when the user is here -->
+                <div class="login-register">
+                    <li class="logout-btn"><a href="index.html">Logout</a></li>
+                </div>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="game-mode">
+        <h1>Leaderboard</h1>
+        <ul class="game-mode-list">
+            <li class="btnall">All</li>
+            <li class="btn16">16 cards</li>
+            <li class="btn36">36 cards</li>
+            <li class="btn64">64 cards</li>
+        </ul>
+    </div>
+
+
+    <div class="leaderboard-wrapper">
+        <ul class="leaderboard-list">
+            <!-- <li class="leaderboard-item">
+                 <div>olegligorov@gmail.com
+                </div>
+                <div>00:25</div> -->
+            <!-- </li> -->
+        </ul>
+    </div>
+</body>
+
+</html>

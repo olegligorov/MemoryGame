@@ -1,0 +1,181 @@
+:root {
+    font-family: sans-serif;
+    --bgcolor: #372E78;
+    --headerColor : #7975AC;
+    --wrapperColor: #FFFCF9;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    box-sizing: border-box;
+}
+
+.leaderboard {
+    margin-left: 70px;
+}
+
+body {
+    background-color: var(--bgcolor);
+}
+
+.header {
+    padding: 8px 20px 0px 20px;
+    width: 100%;
+    height: 60px;
+    background-color: var(--headerColor);
+    margin-bottom:5px;
+}
+
+.nav-list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-list li {
+    list-style: none;
+    padding: 10px 20px 10px;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.nav-list a:visited {
+    color:white;
+}
+
+.main-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    /* background-color: var(--bgcolor); */
+}
+
+.wrapper {
+    height: 450px;
+    width: 450px;
+    background-color: var(--wrapperColor);
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.game-settings {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--wrapperColor);
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 10px;
+    /* margin-top: -55px; */
+}  
+
+.game-size {
+    display: flex;
+    background-color: var(--bgcolor);
+    margin-bottom: 5px;
+    border-radius: 8px;
+}
+
+.game-size li {
+    list-style: none;
+    padding: 5px 20px;
+    border-radius: 8px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.selected-size {
+    background-color: var(--headerColor);
+}
+
+.game-size li:hover {
+    background-color: var(--headerColor);
+}
+
+.cards, .card, .view {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cards {
+    height: 100%;
+    width: 100%;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards .card {
+    cursor: pointer;
+    /* 100% / number of icons per row - 15px*/
+    position: relative;
+    perspective: 800px;
+    transform-style: preserve-3d; 
+    height: calc(100% / 4 - 10px);
+    width: calc(100% / 4 - 10px);
+}
+
+.card .back-view img {
+    max-width: 50px;
+}
+
+.cards .card .view {
+    width: 100%;
+    height: 100%;
+    user-select: none;
+    pointer-events: none;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.05s;
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card .front-view span {
+    font-size: 50px;
+    font-family: Helvetica, sans-serif;
+    font-weight: bold;
+    color: var(--bgcolor);
+}
+
+.start-btn {
+    background-color: var(--bgcolor);
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.4);
+}
+
+
+.hidden {
+    visibility: hidden;
+}
+
+.login-register {
+    display: flex;
+}
+
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.start-btn a:visited {
+    color: white;
+    text-decoration: none;
+}

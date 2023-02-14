@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memory Game</title>
+    <link rel="stylesheet" href="css/game-style.css">
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.15.0/firebase-auth-compat.js"></script>
+    <script src="js/game.js" type="module" defer></script>
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav-bar">
+            <ul class="nav-list">
+                <li>Play Game</li>
+                <li><a href="leaderboard.html" class="leaderboard">Leaderboard</a></li>
+                <!-- swap login with logout when the user is here -->
+                <li class="logout-btn"><a href="index.html">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="main-section">
+        <nav class="game-settings">
+            <ul class="game-size">
+                <li class="selected-size btn16">16</li>
+                <li class="btn36">36</li>
+                <li class="btn64">64</li>
+            </ul>
+            <div>
+                <button class="start-btn">Start Game</button>
+                <button class="stop-btn">Stop Game</button>
+            </div>
+
+        </nav>
+
+        <div class="wrapper wrapper16">
+            <ul class="cards">
+                <!-- <li class="card">
+                <div class="view front-view">
+                    <span class="icon">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="images/img-1.png" alt="card-image">
+                </div>
+                </li>
+                <li class="card">
+                <div class="view front-view">
+                    <span class="icon">?</span>
+                </div>
+                <div class="view back-view">
+                    <img src="images/img-2.png" alt="card-image">
+                </div>
+                </li> -->
+            </ul>
+
+            <div class="popup-container hidden">
+                <div class="popup" id="popup">
+                    <img src="images/trophy-removedbg.png">
+                    <h2>Congratulations</h2>
+                    <h3 class="time-result">Your time was 00:25</h3>
+                    <!-- //insert the time here -->
+                    <button type="button" class="close-popup-btn">OK</button>
+                    <button type="button" class="restart-game-btn">RESTART GAME</button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="timer">
+            00:00
+        </div>
+    </section>
+</body>
+
+</html>
