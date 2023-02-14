@@ -1,13 +1,14 @@
 // setting up firebase
 const firebaseApp = firebase.initializeApp({
-    apiKey: "AIzaSyC2zNL3GKuSVTDBAZdf_p37I9tNqkk0SHM",
-    authDomain: "memory-game-21039.firebaseapp.com",
-    projectId: "memory-game-21039",
-    storageBucket: "memory-game-21039.appspot.com",
-    messagingSenderId: "370026617263",
-    appId: "1:370026617263:web:dbbcc1db7bfa593c85375a",
-    measurementId: "G-ECZ0ZSBDT7"
+    apiKey: "API-KEY",
+    authDomain: "AUTH-DOMAIN",
+    projectId: "PROJECTID",
+    storageBucket: "STORAGEBUCKET",
+    messagingSenderId: "SENDERID",
+    appId: "APPID",
+    measurementId: "MEASURMENTID"
 });
+
 const db = firebaseApp.firestore();
 const auth = firebaseApp.auth();
 
